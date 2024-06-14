@@ -16,7 +16,7 @@ jobs:
       - name: SSH into server and deploy
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.138.197.158.116 }} # Replace with your server's IP address or hostname
+          host: ${{ secrets.SERVER_IP }} # Replace with your server's IP address or hostname
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
